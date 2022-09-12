@@ -1,4 +1,3 @@
-package com.mycompany.lista7;
 
 import java.util.Scanner;
 
@@ -6,31 +5,32 @@ public class ex01 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int[] a = new int[10];
-        int[] b = new int[10];
-        int[] c = new int[10];
-        System.out.println("Vetor A");
+        int[] vetorA = new int[10];int[] vetorB = new int[10];int[] vetorC = new int[10];
 
-        int i;
-        for (i = 0; i < a.length; ++i) {
-            a[i] = sc.nextInt();
+
+        System.out.println("Coloqeu os valores do Vetor A");
+
+
+        for (int i = 0; i < 10; ++i) {
+            vetorA[i] = sc.nextInt();
         }
 
-        System.out.println("Vetor B");
+        System.out.println("Coloque os valores do Vetor B");
 
-        for (i = 0; i < b.length; ++i) {
-            b[i] = sc.nextInt();
+        for (int i = 0; i < 10; ++i) {
+            vetorB[i] = sc.nextInt();
         }
 
-        for (i = 0; i < c.length; ++i) {
-            c[i] = a[i] - b[i] * a[i];
+        for (int i = 0; i < 10; ++i) {
+            vetorC[i] = vetorA[i] - vetorB[i] * vetorA[i];
         }
 
-        System.out.println("Vetor C");
+        System.out.println("O Vetor C é igual a: ");
 
-        for (i = 0; i < b.length; ++i) {
-            System.out.print(c[i] + " ");
+        for (int i = 0; i < 10; ++i) {
+            System.out.print(vetorC[i] + " ");
         }
 
     }
+
 }
